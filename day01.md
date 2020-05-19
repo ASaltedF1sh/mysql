@@ -89,7 +89,7 @@ FROM dept_emp AS d LEFT JOIN employees AS e
 
 ### 一些知识点
 
-#### [mysqlL数据类型介绍](https://www.cnblogs.com/-xlp/p/8617760.html)
+#### [mysql数据类型介绍](https://www.cnblogs.com/-xlp/p/8617760.html)
 #### [left join,right join,inner join,full join之间的区别](https://www.cnblogs.com/lijingran/p/9001302.html)
 #### [mysql的子查询](https://blog.csdn.net/qq_26594041/article/details/89438382)
 #### [mysql的limit用法](https://www.cnblogs.com/xiaoshen666/p/10824117.html)
