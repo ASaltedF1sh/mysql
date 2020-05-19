@@ -4,15 +4,15 @@
 
 ```sql
 SELECT f.title,f.description
-FROM film as f
-WHERE f.film_id in (
+FROM film AS f
+WHERE f.film_id IN (
     SELECT fc.film_id
-    FROM film_category as fc
-    WHERE fc.category_id in 
+    FROM film_category AS fc
+    WHERE fc.category_id IN 
             (
             SELECT c.category_id
-            FROM category as c
-            where c.name = 'Action'));
+            FROM category AS c
+            WHERE c.name = 'Action'));
 )
 ```
 
@@ -28,8 +28,8 @@ WHERE c.name = 'Action';
 ### [创建唯一索引和普通索引](https://www.nowcoder.com/practice/e1824daa0c49404aa602cf0cb34bdd75)
 
 ```sql
-CREATE UNIQUE INDEX uniq_idx_firstname on actor(first_name);
-CREATE INDEX idx_lastname on actor(last_name);
+CREATE UNIQUE INDEX uniq_idx_firstname ON actor(first_name);
+CREATE INDEX idx_lastname ON actor(last_name);
 ```
 
 ### [删除emp_no重复的记录，只保留最小的id对应的记录](https://www.nowcoder.com/practice/3d92551a6f6d4f1ebde272d20872cf05)
@@ -89,9 +89,9 @@ FROM dept_emp AS d LEFT JOIN employees AS e
 
 ### 一些知识点
 
-#### mysqlL数据类型介绍(https://www.cnblogs.com/-xlp/p/8617760.html)
-#### left join,right join,inner join,full join之间的区别(https://www.cnblogs.com/lijingran/p/9001302.html)
-#### mysql的子查询(https://blog.csdn.net/qq_26594041/article/details/89438382)
-#### mysql的limit用法(https://www.cnblogs.com/xiaoshen666/p/10824117.html)
-#### mysql索引详细介绍(https://www.jianshu.com/p/0d6c828d3c70)
-#### SQL语句编写规范(https://blog.csdn.net/qq_34100655/article/details/82904797?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
+#### [mysqlL数据类型介绍](https://www.cnblogs.com/-xlp/p/8617760.html)
+#### [left join,right join,inner join,full join之间的区别](https://www.cnblogs.com/lijingran/p/9001302.html)
+#### [mysql的子查询](https://blog.csdn.net/qq_26594041/article/details/89438382)
+#### [mysql的limit用法](https://www.cnblogs.com/xiaoshen666/p/10824117.html)
+#### [mysql索引详细介绍](https://www.jianshu.com/p/0d6c828d3c70)
+#### [SQL语句编写规范](https://blog.csdn.net/qq_34100655/article/details/82904797?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
