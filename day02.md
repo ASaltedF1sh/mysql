@@ -43,6 +43,6 @@ WHERE d.to_date = '9999-01-01';
 
 ## 知识点
 ### [mysql中去重————distinct用法](https://www.cnblogs.com/shiluoliming/p/6604407.html)
-### 主键关联、外键关联](https://www.cnblogs.com/printN/p/6405628.html)
+### [主键关联、外键关联](https://www.cnblogs.com/printN/p/6405628.html)
 ### [数据库的一对多、多对一、一对一、多对多关系](https://www.iteye.com/blog/duanfei-1870746)
 ### [having和where的区别](https://www.cnblogs.com/ljf-Sky/p/9024683.html)
