@@ -1,4 +1,5 @@
-### [查找所有员工的last_name和first_name以及对应的dept_name，也包括暂时没有分配部门的员工]https://www.nowcoder.com/practice/5a7975fabe1146329cee4f670c27ad55?tpId=82&&tqId=29771&rp=1&ru=/ta/sql&qru=/ta/sql/question-ranking)
+### [查找所有员工的last_name和first_name以及对应的dept_name，也包括暂时没有分配部门的员工]
+https://www.nowcoder.com/practice/5a7975fabe1146329cee4f670c27ad55?tpId=82&&tqId=29771&rp=1&ru=/ta/sql&qru=/ta/sql/question-ranking)
 #### [JOIN的嵌套]
 ```sql
 SELECT em.last_name, em.first_name, d.dept_name
@@ -17,7 +18,8 @@ LEFT JOIN departments
 ON a.dept_no=departments.dept_no;
 ```
 
-### [查找员工编号emp_no为10001其自入职以来的薪水salary涨幅]https://www.nowcoder.com/practice/c727647886004942a89848e2b5130dc2)
+### [查找员工编号emp_no为10001其自入职以来的薪水salary涨幅]
+https://www.nowcoder.com/practice/c727647886004942a89848e2b5130dc2)
 
 ```sql
 SELECT (
