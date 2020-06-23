@@ -1,5 +1,4 @@
-### [查找所有员工的last_name和first_name以及对应的dept_name，也包括暂时没有分配部门的员工]
-https://www.nowcoder.com/practice/5a7975fabe1146329cee4f670c27ad55?tpId=82&&tqId=29771&rp=1&ru=/ta/sql&qru=/ta/sql/question-ranking)
+### [查找所有员工的last_name和first_name以及对应的dept_name，也包括暂时没有分配部门的员工](https://www.nowcoder.com/practice/5a7975fabe1146329cee4f670c27ad55?tpId=82&&tqId=29771&rp=1&ru=/ta/sql&qru=/ta/sql/question-ranking)
 #### [JOIN的嵌套]
 ```sql
 SELECT em.last_name, em.first_name, d.dept_name
@@ -18,8 +17,7 @@ LEFT JOIN departments
 ON a.dept_no=departments.dept_no;
 ```
 
-### [查找员工编号emp_no为10001其自入职以来的薪水salary涨幅]
-https://www.nowcoder.com/practice/c727647886004942a89848e2b5130dc2)
+### [查找员工编号emp_no为10001其自入职以来的薪水salary涨幅](https://www.nowcoder.com/practice/c727647886004942a89848e2b5130dc2)
 
 ```sql
 SELECT (
@@ -28,7 +26,7 @@ SELECT (
 AS growth;
 ```
 
-### [查找所有员工自入职以来的薪水涨幅情况]https://www.nowcoder.com/practice/fc7344ece7294b9e98401826b94c6ea5)
+### [查找所有员工自入职以来的薪水涨幅情况](https://www.nowcoder.com/practice/fc7344ece7294b9e98401826b94c6ea5)
 
 ```sql
 SELECT em.emp_no, (slr.salary - c.salary) AS growth
@@ -41,7 +39,7 @@ ON em.emp_no = c.emp_no AND em.hire_date = c.from_date
 ORDER BY growth
 ```
 
-### [统计各个部门的工资记录数]https://www.nowcoder.com/practice/6a62b6c0a7324350a6d9959fa7c21db3)
+### [统计各个部门的工资记录数](https://www.nowcoder.com/practice/6a62b6c0a7324350a6d9959fa7c21db3)
 
 ```sql
 SELECT dp.dept_no, dp.dept_name, count(slr.emp_no) AS sum
@@ -50,7 +48,7 @@ INNER JOIN salaries as slr ON de.emp_no = slr.emp_no
 GROUP BY dp.dept_no;
 ```
 
-### [对所有员工的薪水按照salary进行按照1-N的排名]https://www.nowcoder.com/practice/b9068bfe5df74276bd015b9729eec4bf)
+### [对所有员工的薪水按照salary进行按照1-N的排名](https://www.nowcoder.com/practice/b9068bfe5df74276bd015b9729eec4bf)
 
 ####[使用窗函数(sql server、Oracle)]
 ```sql
