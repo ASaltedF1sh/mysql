@@ -50,7 +50,7 @@ GROUP BY dp.dept_no;
 
 ### [对所有员工的薪水按照salary进行按照1-N的排名](https://www.nowcoder.com/practice/b9068bfe5df74276bd015b9729eec4bf)
 
-####[使用窗函数(sql server、Oracle)]
+#### [使用窗函数(sql server、Oracle)]
 ```sql
 select emp_no, salary, dense_rank() over(order by salary desc) as rank
 from salaries 
@@ -58,7 +58,7 @@ where to_date='9999-01-01'
 order by rank,emp_no;
 ```
 
-####[表的复用]
+#### [表的复用]
 ```sql
 #一同使用 DISTINCT 和 COUNT 关键词，来计算非重复结果的数目。
 SELECT s1.emp_no, s1.salary, COUNT(DISTINCT s2.salary) AS rank
