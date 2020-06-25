@@ -48,7 +48,7 @@ WHERE tt.to_date ='9999-01-01' and de.to_date = '9999-01-01'
 GROUP BY de.dept_no, tt.title;
 ```
 
-### [使用join查询没有分类的电影名称和id](https://www.nowcoder.com/practice/eb9b13e5257744db8265aa73de04fd44)
+### [每年薪水涨幅超过5000的员工](https://www.nowcoder.com/practice/3a303a39cc40489b99a7e1867e6507c5)
 
 ```sql
 SELECT s1.emp_no, s1.from_date, (s1.salary - s2.salary) AS salary_growth
@@ -57,7 +57,7 @@ WHERE s1.emp_no = s2.emp_no AND s1.from_date = s2.to_date AND s1.salary - s2.sal
 ORDER BY salary_growth DESC;
 ```
 
-### [每年薪水涨幅超过5000的员工](https://www.nowcoder.com/practice/3a303a39cc40489b99a7e1867e6507c5)
+### [使用join查询没有分类的电影名称和id](https://www.nowcoder.com/practice/eb9b13e5257744db8265aa73de04fd44)
 
 #### [方法1]
 ```sql
@@ -69,9 +69,6 @@ WHERE f.film_id NOT IN(
 ```
 #### [方法2]
 ```sql
-SELECT f.film_id, f.title
-FROM film f
-WHERE f.film_id NOT IN(
-     SELECT film_category.film_id
-     FROM film_category LEFT JOIN film);
+SELECT f.film_id, f.title FROM film f LEFT JOIN film_category fc
+ON f.film_id = fc.film_id WHERE fc.category_id IS NULL;
 ```
