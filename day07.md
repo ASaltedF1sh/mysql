@@ -30,7 +30,7 @@ INSERT INTO actor VALUES (1, 'PENELOPE', 'GUINESS', '2006-02-15 12:34:33'),
 
 ### [创建一个actor_name表，并且将actor表中的所有first_name以及last_name导入该表](https://www.nowcoder.com/practice/881385f388cf4fe98b2ed9f8897846df)
 
-####[sqlite语法]
+#### [sqlite语法]
 ```sql
 CREATE TABLE actor_name AS
 SELECT first_name,last_name FROM actor;
@@ -54,7 +54,7 @@ FROM actor;
 
 ### [查询emp_no为10005, 使用强制索引](https://www.nowcoder.com/practice/f9fa9dc1a1fc4130b08e26c22c7a1e5f)
 
-####[sqlite语法]
+#### [sqlite语法]
 ```sql
 SELECT *
 FROM salaries
@@ -62,7 +62,7 @@ INDEXED BY idx_emp_no
 WHERE emp_no = '10005';
 ```
 
-####[mysql语法]
+#### [mysql语法]
 ```sql
 SELECT * FROM salaries
 FORCE INDEX (idx_emp_no)
